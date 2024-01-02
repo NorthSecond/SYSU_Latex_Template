@@ -1,11 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/NorthSecond/SYSU_Latex_Template">
-    <img alt="UCAS_Latex_Template" src="https://github.com/NorthSecond/SYSU_Latex_Template/blob/main/figures/sysu.jpg"  />
-  </a>
-
-  <br />
-  中山大学通用课程大作业模板
-
+  中山大学非官方的课程大作业模板
 </h1>
 
 <p align="center">
