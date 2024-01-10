@@ -19,6 +19,8 @@
 % Part 1: 封面
 % =============================================
 \cover
+\thispagestyle{empty} % 首页不显示页码
+\clearpage
 
 % =============================================
 % Part 2： 摘要
@@ -28,23 +30,22 @@
 %在此填写摘要内容
 %
 %\end{abstract}
-% \newpage
+% \thispagestyle{empty} % 摘要页不显示页码
+% \clearpage
 
-\thispagestyle{empty} % 首页不显示页码
 
 % =============================================
 % Part 3： 目录页
 % =============================================
-\newpage
 % 重置页码，并使用罗马数字
 \pagenumbering{Roman}
 \setcounter{page}{1}
 \tableofcontents
+\clearpage
 
 % =============================================
 % Part 4： 正文内容
 % =============================================
-\newpage
 % 重置页码，并使用阿拉伯数字
 \pagenumbering{arabic}
 \setcounter{page}{1}
@@ -55,12 +56,13 @@
 %\end{center}
 
 \section{模板说明}
+
 本模板主要适用于一些课程的平时论文以及期末论文，默认页边距为2.5cm，中文宋体，英文Times New Roman，字号为12pt（小四）。
 
 编译方式：\verb|xelatex -> bibtex -> xelatex*2|
 
-
 默认模板文件由以下四部分组成：
+
 \begin{itemize}
     \item \texttt{main.tex} 主文件
     \item \texttt{reference.bib} 参考文献，使用bibtex
@@ -74,15 +76,18 @@
 
 \section{一些插入功能}
 \subsection{插入公式}
+
 行内公式$v-\varepsilon+\phi=2$。
 
 插入行间公式如\autoref{Euler}：
+
 \begin{equation}
     v-\varepsilon+\phi=2
     \label{Euler}
 \end{equation}
 
 \subsection{插入图片}
+
 SYSU校徽如\autoref{fig:SYSU}所示，注意这里使用了\verb|~\autoref{}|命令，也就是会自动生成“图”“式”等前缀，无需手动输入。
 
 \begin{figure}[!htbp]
@@ -111,10 +116,12 @@ SYSU校徽如\autoref{fig:SYSU}所示，注意这里使用了\verb|~\autoref{}|�
 }
 
 \subsection{插入表格}
+
 本模板文件如\autoref{doc}所示。
+
 \begin{table}[!htbp]
     \centering
-    \begin{tabular}{l  | l}
+    \begin{tabular}{l|l}
         \hline
         文件名                  & 说明         \\
         \hline
@@ -151,15 +158,12 @@ SYSU校徽如\autoref{fig:SYSU}所示，注意这里使用了\verb|~\autoref{}|�
 \end{proof}
 
 \subsection{插入参考文献}
+
 直接使用\verb|\cite{}|即可。
 
-例如：
+例如：此处引用了文献~\cite{0Isaac}。此处引用了文献~\cite{2016The}
 
-
-\textit{ 此处引用了文献~\cite{0Isaac}。此处引用了文献~\cite{2016The}}
-
-
-引用过的文献会自动出现在参考文献中。
+\par 引用过的文献会自动出现在参考文献中。
 
 \section{写在最后}
 
@@ -168,11 +172,12 @@ SYSU校徽如\autoref{fig:SYSU}所示，注意这里使用了\verb|~\autoref{}|�
 本项目在\href{https://github.com/jweihe/UCAS_Latex_Template}{中国科学院大学模板}的基础上进行修改，感谢原作者的辛勤付出。
 
 \subsection{发布地址}
+
 \begin{itemize}
     \item Github: \url{https://github.com/NorthSecond/SYSU_Latex_Template}
     \item Overleaf: \url{https://www.overleaf.com/latex/templates/sysu-latex-template/dxwrhzbydxyq}
     \item TexPage: \\
-    \url{https://www.texpage.com/template/21db014e-5065-448c-a6f2-545b983aee2d}
+          \url{https://www.texpage.com/template/21db014e-5065-448c-a6f2-545b983aee2d}
 \end{itemize}
 
 % =============================================
